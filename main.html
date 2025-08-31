@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Why some close friends or friends badmouth u to others</h1>
+        <p>It is because they are jealous and they just wants to be close to know your weakness or find your deepest darkest sercet to make your reputation go down the drain</p>
+        <h1>Ascending and Decending for mapped numbers</h1>
+        <p id="product_value"></p>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="desecending()">Descending order</button>
+        <script>
+            var  numbers = [25, 12, 19, 94];
+            function myFunction(num) {
+                return num * 10;
+            }
+            var newarray = numbers.map(myFunction);
+            document.getElementById("product_value").innerHTML = "The Mapped values are: " +newarray;
+
+            function ascending() {
+                newarray.sort
+                (function(a, b){return a - b});
+                document.getElementById("product_value").innerHTML = "The ascending order of mapped values are: "+newarray;
+            }
+            function descending() {
+                newarray.sort(function(a,b){return b - a});
+                document.getElementById("product_value").innerHtml = "The descending order of mapped values are: "+newarray            
+            }
+
+
+
+
+        </script>
+    </body>
+</html>
